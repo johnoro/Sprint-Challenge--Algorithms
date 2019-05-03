@@ -115,35 +115,35 @@ class SortingRobot:
                 self.set_light_off()
         
 
-        # # Partial bubble sort, sorting from both directions
-        # # sadly too repetitive for the stretch tests
-        #
-        # def can_move(self, direction):
-        #     return getattr(self, f'can_move_{direction}')()
-        # def move(self, direction):
-        #     return getattr(self, f'move_{direction}')()
-        # def move_items(self, from_dir, to_dir, comp):
-        #     """
-        #     Utilizies additional swaps in order to handle None
-        #     """
-        #     self.set_light_off()
-        #     while self.can_move(to_dir):
-        #         self.swap_item()
-        #         self.move(to_dir)
-        #         if self.compare_item() == comp:
-        #             self.swap_item()
-        #             self.set_light_on()
-        #         self.move(from_dir)
-        #         self.swap_item()
-        #         self.move(to_dir)
-        #
-        # def sort():
-        #     self.set_light_on()
-        #     while self.light_is_on():
-        #         self.move_items('left', 'right', 1)
-        #         if not self.light_is_on():
-        #             break
-        #         self.move_items('right', 'left', -1)
+    # # Partial bubble sort, sorting from both directions
+    # # sadly too repetitive for the stretch tests
+    #
+    # def can_move(self, direction):
+    #     return getattr(self, f'can_move_{direction}')()
+    # def move(self, direction):
+    #     return getattr(self, f'move_{direction}')()
+    # def move_items(self, from_dir, to_dir, comp):
+    #     """
+    #     Utilizies additional swaps in order to handle None
+    #     """
+    #     self.set_light_off()
+    #     while self.can_move(to_dir):
+    #         self.swap_item()
+    #         self.move(to_dir)
+    #         if self.compare_item() == comp:
+    #             self.swap_item()
+    #             self.set_light_on()
+    #         self.move(from_dir)
+    #         self.swap_item()
+    #         self.move(to_dir)
+    #
+    # def sort(self):
+    #     self.set_light_on()
+    #     while self.light_is_on():
+    #         self.move_items('left', 'right', 1)
+    #         if not self.light_is_on():
+    #             break
+    #         self.move_items('right', 'left', -1)
 
 
 
