@@ -24,8 +24,6 @@ def find_first_unsafe_floor(n, eggs):
   if n <= 0:
     raise ValueError('Buildings must have more than 0 floors!')
 
-  found = False
-
   while len(eggs) > 0:
     egg = eggs.pop()
     egg.throw(mid) # throws off of mid'th floor
@@ -36,6 +34,11 @@ def find_first_unsafe_floor(n, eggs):
       visited[mid] = True
     else:
       mid += mid//2
+  
+  if len(eggs) == 0:
+    raise ValueError('You might need more eggs!')
+  else:
+    raise ValueError('Your building seems to not have a floor where eggs will break.')
 ```
 I wanted to write out a nearly complete program so as to show some of the subtleties. The last thing needed for this to be complete would be some exact implementation of `egg`, and the throwing of it.
 
